@@ -30,3 +30,9 @@ services:
     ports:
       - "4822:4822"
     restart: always
+
+  adminer:
+    image: adminer:4.7.6
+    restart: always
+    ports:
+        - "9292:8080"
