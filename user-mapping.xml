@@ -1,0 +1,18 @@
+<user-mapping>
+        <authorize 
+                username="tecmint" 
+                password="8383339b9c90775ac14693d8e620981f" 
+                encoding="md5">
+                <connection name="RHEL 7">
+                        <protocol>ssh</protocol>
+                        <param name="hostname">192.168.0.18</param>
+                        <param name="port">22</param>
+                        <param name="username">gacanepa</param>
+                </connection>
+                <connection name="Windows 7">
+                        <protocol>rdp</protocol>
+                        <param name="hostname">192.168.20.8</param>
+                        <param name="port">3389</param>
+                </connection>
+        </authorize>
+</user-mapping>

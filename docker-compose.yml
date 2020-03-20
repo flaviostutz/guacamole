@@ -1,17 +1,9 @@
-# guacamole
-
-Guacamole VNC RDP SSH html client
-
-## Usage
-
-* Create a docker-compose.yml file
-
-```yml
 version: '3.5'
 
 services:
 
   guacamole:
+    build: .
     image: flaviostutz/guacamole
     ports:
       - "8080:8080"
@@ -38,12 +30,3 @@ services:
     ports:
       - "4822:4822"
     restart: always
-
-```
-
-* Run ```docker-compose up```
-
-* Open browser at http://localhost:8080/guacamole
-
-* Use user/login guacadmin/guacadmin
-
